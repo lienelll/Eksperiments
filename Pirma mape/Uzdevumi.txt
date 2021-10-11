@@ -1,3 +1,5 @@
 -Uzdevums par datumiem
 -Uzdevums par laiku
 -Uzdevums par noformējumu
+-Uzdevumi Eksperimentam
+-Uzdevums par mainīgajiem
