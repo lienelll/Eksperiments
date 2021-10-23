@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Web Page</h1>
+<p>My First Paragraph</p>
+<button>Izmēģini</button>
+
+<!-- Lai piekļūtu HTML elementam, JavaScript var izmantot šo document.getElementById(id)metodi.
+    HTML elementa internalHTML rekvizītu maiņa ir izplatīts veids, kā rādīt datus HTML formātā.
+idAtribūts nosaka HTML elementu. innerHTML Īpašums nosaka HTML saturu: -->
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 5 + 6;
+</script>
+
+
+<!-- Pārbaudes nolūkos ir ērti izmantot document.write(): -->
+<script>
+    document.write(5 + 6);
+</script>
+<br>
+<!-- Izmantojot document.write () pēc HTML dokumenta ielādes, tiks izdzēsts viss esošais HTML : -->
+<button type="button" onclick="document.write(5 + 6)">Try it</button>
+<!-- Metode document.write () jāizmanto tikai testēšanai. -->
+
+
+<!-- Datu parādīšanai varat izmantot brīdinājuma lodziņu: -->
+<script>
+    alert(5 + 6);
+</script>
+
+
+<!-- Atkļūdošanas nolūkos varat izsaukt console.log()metodi pārlūkprogrammā, lai parādītu datus. -->
+<script>
+    console.log(5 + 6);
+</script>
+<!-- F12 on your keybord will activate debugging.Then select "Console" in the debugger menu.Then click Run again.
+ -->
+    
+
+ <!-- JavaScript nav neviena drukas objekta vai drukas metodes.
+Jūs nevarat piekļūt izvadierīcēm, izmantojot JavaScript.
+Vienīgais izņēmums ir tas, ka varat izsaukt window.print()metodi pārlūkprogrammā, lai izdrukātu pašreizējā loga saturu. -->
+
+<br><br>
+<button onclick="window.print()">Print this page</button>
+
+</body>
+</html>
