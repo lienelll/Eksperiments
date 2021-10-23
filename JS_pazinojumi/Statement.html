@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2 style= color:blueviolet;>Datorprogramma ir saraksts ar "instrukciju", lai tiktu "izpildīts" ar datoru.<br>
+
+    Programmēšanas valodā šīs programmēšanas instrukcijas sauc par paziņojumiem .<br>
+    
+    JavaScript programma ir saraksts ar programmēšanas pārskatu .</h2>
+    
+    <h2 style= color:red;>HTML valodā JavaScript programmas izpilda tīmekļa pārlūkprogramma.</h2>
+
+<h2>JavaScript paziņojumi sastāv no:
+Vērtības, operatori, izteiksmes, atslēgvārdi un komentāri.</h2>
+
+<!--Šis paziņojums liek pārlūkprogrammai rakstīt “Sveika Pasaule!”. HTML elementa iekšpusē ar id = "demo": -->
+
+<p id="demo"></p>
+<script>
+document.getElementById("demo").innerHTML = "Sveika Pasaule!";
+</script>
+<!-- Lielākā daļa JavaScript programmu satur daudz JavaScript paziņojumu. 
+    Paziņojumi tiek izpildīti pa vienam tādā pašā secībā, kādā tie ir uzrakstīti.
+JavaScript programmas (un JavaScript paziņojumus) bieži sauc par JavaScript kodu. -->
+
+<!-- Semikoli atdala JavaScript paziņojumus.
+Katra izpildāmā priekšraksta beigās pievienojiet semikolu: -->
+<p id="demo1"></p>
+
+<script>
+let a, b, c;
+a = 5;
+b = 6;
+c = a + b;
+document.getElementById("demo1").innerHTML = c;
+</script>
+<!-- Atdalot ar semikolu, vienā rindā ir atļauti vairāki paziņojumi: a = 5; b = 6; c = a + b; -->
+
+<!-- JavaScript paziņojumus var sagrupēt koda blokos, cirtainās iekavās {...}.
+Kodu bloku mērķis ir definēt kopā izpildāmos paziņojumus.
+Viena vieta, kur atradīsit paziņojumus, kas sagrupēti blokos, ir JavaScript funkcijās: -->
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<script>
+function myFunction() {
+    document.getElementById("demo2").innerHTML = "Sveiks!";
+    document.getElementById("demo3").innerHTML = "Kā klājas?";
+  }
+</script>
+
+<p>JavaScript paziņojumi bieži sākas ar atslēgvārdu, lai identificētu veicamo JavaScript darbību.</p>
+
+<img src='Atslegvardi.jpg'/>
+<p>JavaScript atslēgvārdi ir rezervēti vārdi. Rezervētos vārdus nevar izmantot kā mainīgo nosaukumus.</p>
+
+
+
+</body>
+</html>
