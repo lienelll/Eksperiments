@@ -15,14 +15,19 @@ body {
   align-items: center;
   margin: 0;
 }
+#text {
+  text-align:center;
+  position: relative;
+  top: 30%;
+ }
 
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: auto;
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
   position: relative;
   transform: scale(1);
 }
@@ -32,10 +37,13 @@ body {
   height: 100%;
   width: 100%;
   border-radius: 50%;
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
+  align-items: center;
+  margin: auto;
+  top: 0%;
+  left: 0%;
   z-index: -1;
+  text-align:center;
 }
 
 .gradient-circle {
@@ -50,42 +58,42 @@ body {
   height: 320px;
   width: 320px;
   z-index: -2;
-  border-radius: 50%;
+  border-radius: 100%;
   position: absolute;
-  top: -10px;
-  left: -10px;
+  align-items: center;
+  margin: auto;
 }
 
 .pointer {
   background-color: #fff;
   border-radius: 50%;
-  height: 20px;
-  width: 20px;
+  height: 40px;
+  width: 40px;
   display: block;
 }
 
 .pointer-container {
   position: absolute;
-  top: -40px;
-  left: 140px;
+  top: -100px;
+  left: 100px;
   width: 20px;
   height: 190px;
-  animation: rotate 7.5s linear forwards infinite;
+  animation: rotate 5s linear 3s infinite alternate;
   transform-origin: bottom center;
 }
 
 @keyframes rotate {
   from {
-    transform: rotate(0deg);
+    transform: rotate(90deg);
   }
 
   to {
-    transform: rotate(360deg);
+    transform: rotate(270deg);
   }
 }
 
 .container.grow {
-  animation: grow 3s linear forwards;
+  animation: grow 5s linear backwards;
 }
 
 @keyframes grow {
@@ -94,17 +102,17 @@ body {
   }
 
   to {
-    transform: scale(1.2);
+    transform: scale(1.5);
   }
 }
 
 .container.shrink {
-  animation: shrink 3s linear forwards;
+  animation: shrink 5s linear backwards;
 }
 
 @keyframes shrink {
   from {
-    transform: scale(1.2);
+    transform: scale(1.5);
   }
 
   to {
