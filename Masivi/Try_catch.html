@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id=id3>JavaScript Arrays</h2>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="error"></p>
+
+<script>
+try
+{
+const cars = [];
+document.getElementById("id3").innerHTML = typeof cars;
+document.getElementById("demo1").innerHTML = cars;
+cars[0]= "Saab";
+cars[1]= "Volvo";
+cars[2]= "BMW";
+document.getElementById("demo2").innerHTML = cars;
+}
+catch(err)
+{
+document.getElementById("error").innerHTML = err;
+}
+</script>
+
+</body>
+</html>

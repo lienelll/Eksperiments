@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function myfunction(){
+    console.log("abc teksta rindas tips ir: " + typeof "abs");
+    console.log("skaitļa 10 datu tips ir: " + typeof 10);
+    console.log("skaitļa 10,5 datu tips ir: " + typeof 10.5);
+    console.log("{firstName: \"Liene\", lastName: \"Lane\"} konstrukcijas tips ir: " + typeof {firstName: "Liene", lastName: "Lane"});
+    test = 'abc';
+    console.log(typeof test);
+    if (typeof test.replaceAll === "function"){
+        console.log(typeof test.replaceAll);
+        console.log("Jā, replaceAll funkcija ir ");
+    }
+    else{
+        console.log("Nē, replaceAll funkcija nav");
+    }
+}
+    
+</script>
+
+<h2>My First JavaScript</h2>
+
+<button type="button"
+onclick=
+"myfunction();
+
+document.getElementById('demo1').innerHTML = new Date().getDate() + '.' + (new Date().getMonth()+1) + '.' + new Date().getFullYear() + '.';
+
+document.getElementById('demo2').innerHTML = (new Date().toLocaleString('fi-FI', { timeZone: 'UTC' })).replace('klo', ' ').slice(0,-3).replaceAll('.', ':')">
+
+Click me to display Date and Time.</button>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+</body>
+</html>

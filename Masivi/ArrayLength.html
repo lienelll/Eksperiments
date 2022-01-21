@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2 id=id3>JavaScript Arrays</h2>
+
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="error"></p>
+
+    <script>
+        try {
+            const cars = ["Saab", "Volvo", "BMW"];
+
+            document.getElementById("demo1").innerHTML = cars;
+            document.getElementById("demo2").innerHTML = "Masīva garums ir " + cars.length;
+        }
+        catch (err) {
+            document.getElementById("error").innerHTML = err;
+        }
+    </script>
+
+</body>
+
+</html>
